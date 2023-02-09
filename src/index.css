@@ -1,13 +1,158 @@
-body {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --body-cl: white;
+  --body-bg: rgb(53, 54, 58);
+
+  --container-bg: rgb(97, 82, 63);
+  --container-text-to-push-bg: rgb(31, 43, 80);
+  --writing-count-bd: rgb(153, 130, 130);
+
+  --container-hover-bg: rgba(137, 43, 226, 0.295);
+  --speak-hover-bg: rgba(137, 43, 226, 0.295);
+  --speak-active-bg: rgba(15, 7, 22, 0.295);
+  --speak-bg: rgba(255, 0, 0, 0.637);
+  --to-write-text-input-bg: rgba(241, 225, 255, 0.295);
+  --chronometer-play-pause-bg: royalblue;
+  --chronometer-play-pause-hover-bg: blue;
+  --chronometer-play-pause-active-bg: rgb(26, 26, 129);
+
+  --word-result-bad-cl: #ec5656;
+  --word-result-good-cl: rgb(113, 226, 113);
+  --word-result-bd: green;
+  --word-result-bg: rgb(8, 58, 85);
+
+  --word-text-result-cl: rgb(231, 231, 0);
+  --to-write-text-input-cl: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--body-cl);
+  background-color: var(--body-bg);
 }

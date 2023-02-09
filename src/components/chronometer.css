@@ -1,0 +1,32 @@
+.chronometer {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  border: 1px solid var(--chronometer-play-pause-bg);
+  border-radius: 7px;
+  padding-left: 5px;
+  width: 80px;
+}
+.chronometer span {
+  margin-right: 5px;
+}
+.chronometer #play-pause {
+  width: 30px;
+  height: 30px;
+  background-color: var(--chronometer-play-pause-bg);
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: white;
+}
+#play-pause svg {
+  width: 15px;
+}
+.chronometer #play-pause:hover {
+  background-color: var(--chronometer-play-pause-hover-bg);
+}
+.chronometer #play-pause:active {
+  background-color: var(--chronometer-play-pause-active-bg);
+}
