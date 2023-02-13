@@ -1,0 +1,7 @@
+#writing-count {
+  border-radius: 10px;
+  border: solid var(--chronometer-play-pause-bg) 1px;
+  padding: 5px;
+  width: 25px;
+  text-align: center;
+}

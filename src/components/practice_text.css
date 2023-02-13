@@ -1,0 +1,43 @@
+.main-container-items {
+  display: flex;
+}
+.container-item {
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--container-bg);
+  width: 90%;
+  border-radius: 15px 0 0 0;
+}
+.container-item:hover {
+  background-color: var(--container-hover-bg);
+}
+.to-write-text input {
+  background-color: var(--to-write-text-input-bg);
+  color: var(--to-write-text-input-cl);
+  /* /*width: 790px;*/
+  width: 97.5%;
+  margin-bottom: 30px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+.word-result-bad {
+  color: var(--word-result-bad-cl);
+}
+.word-result-good {
+  color: var(--word-result-good-cl);
+}
+.word-text-result {
+  color: var(--word-text-result-cl);
+  font-weight: bold;
+}
+.word-result {
+  background-color: var(--container-bg);
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 0 5px 5px 15px;
+}
+.word-result div {
+  font-weight: bold;
+}

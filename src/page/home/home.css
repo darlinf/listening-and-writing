@@ -1,0 +1,12 @@
+.container-text-to-push {
+  width: 800px;
+  margin: auto;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  width: 800px;
+  margin: auto;
+  margin-top: 20px;
+}

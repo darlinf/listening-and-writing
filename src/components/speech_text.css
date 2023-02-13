@@ -1,0 +1,18 @@
+.speak:hover {
+  background-color: var(--speak-hover-bg);
+}
+
+.speak:active {
+  background-color: var(--speak-active-bg);
+}
+
+.speak {
+  background-color: var(--speak-bg);
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: white;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
