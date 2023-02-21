@@ -1,5 +1,5 @@
 import "./speech_text.css";
-import speak from "../_herpers/speak";
+import speak from "../_helpers/speak";
 
 function SpeechText({ text }) {
   return (

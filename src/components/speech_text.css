@@ -8,11 +8,14 @@
 
 .speak {
   background-color: var(--speak-bg);
-  width: 10%;
+  width: 8%;
   display: flex;
-  justify-content: center;
   align-items: center;
   fill: white;
   cursor: pointer;
   border-radius: 0 5px 5px 0;
+}
+
+.speak span {
+  width: 1%;
 }

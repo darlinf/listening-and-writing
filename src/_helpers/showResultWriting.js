@@ -1,4 +1,4 @@
-function wordNormaliced(wordText) {
+function wordNormalized(wordText) {
   return wordText.replaceAll(",", "").replaceAll(".", "").toUpperCase();
 }
 
@@ -7,13 +7,10 @@ function showResultWriting(textInput2, textResult2) {
   let textResult = textInput2.split(" ");
   let resultWriting = [];
   let flat = true;
-  let saveI = 0;
-
-  console.log(textInput);
 
   for (let j = 0; j < textInput.length; j++) {
     for (let i = 0; i < textResult.length; i++) {
-      if (wordNormaliced(textResult[i]) === wordNormaliced(textInput[j])) {
+      if (wordNormalized(textResult[i]) === wordNormalized(textInput[j])) {
         resultWriting.push(
           `<span class="word-result-good">${textInput[j]}</span>`
         );
@@ -36,7 +33,7 @@ function showResultWriting(textInput2, textResult2) {
   for (let i = 0; i < textResult.length; i++) {
     for (let j = 0; j < resultWriting.length; j++) {
       if (
-        wordNormaliced(textResult[i]) === wordNormaliced(textInput[j]) &&
+        wordNormalized(textResult[i]) === wordNormalized(textInput[j]) &&
         resultWriting[0].includes("good") === true
       ) {
         flat2 = true;
