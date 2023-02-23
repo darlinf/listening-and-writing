@@ -1,4 +1,5 @@
 function speak(
+  finish,
   textToSpeak = "hello",
   pitchV = 0.7,
   rateV = 0.5,
@@ -15,6 +16,7 @@ function speak(
 
     utterThis.onend = function (event) {
       console.log("SpeechSynthesisUtterance.onend");
+      finish();
     };
 
     utterThis.onerror = function (event) {

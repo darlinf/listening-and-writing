@@ -1,5 +1,6 @@
 import "./practice_text.css";
 import SpeechText from "./speech_text";
+import SpeechTextByWord from "./speech_text_by_word";
 import { useRef, useState } from "react";
 import showResultWriting from "../_helpers/showResultWriting";
 import { dataService } from "../_services/data.service";
@@ -46,8 +47,11 @@ function PracticeText({ sentence, sentencesSolved, index }) {
             ></div>
           )}
 
-          <div className="speak">
+          <div className="speak2">
             <span>{<SpeechText text={sentence} />}</span>
+          </div>
+          <div className="speak">
+            <span>{<SpeechTextByWord text={sentence} />}</span>
           </div>
         </div>
         <div className="to-write-text">
