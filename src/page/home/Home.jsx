@@ -9,9 +9,7 @@ import { dataService } from "../../_services/data.service";
 
 function Home() {
   const [sentencesSolved, setSentencesSolved] = useState(0);
-
   const [printText, setPrintText] = useState(null);
-
   const { data } = dataService.getData();
 
   useEffect(() => {
@@ -31,7 +29,7 @@ function Home() {
         </div>
       </div>
       <div className="container">
-        {printText?.split(".").map((x, index) => (
+        {printText?.split(/\r?\n|\r|\.|\n/g).map((x, index) => (
           <PracticeText
             index={index}
             sentencesSolved={setSentencesSolved}

@@ -13,15 +13,11 @@ function InputText({ printText }) {
       dataService.setData({ ...dataService.dataSave, data: null });
       printText(null);
     } else {
-      //console.log(string);
       let completed = {};
 
-      string.split(".").forEach((_, index) => {
+      string.split(/\r?\n|\r|\.|\n/g).forEach((_, index) => {
         Object.assign(completed, { [index]: false });
-        //return { [index]: false };
       });
-
-      //console.log(completed);
 
       dataService.setData({
         ...dataService.dataSave,
@@ -36,7 +32,14 @@ function InputText({ printText }) {
   return (
     <>
       <div className="text-to-push-input">
-        <input type="text" onChange={handleChange} id="text-to-push" />
+        <textarea
+          rows="1"
+          cols="50"
+          wrap="physical"
+          type="text"
+          onChange={handleChange}
+          id="text-to-push"
+        />
         <button
           id="push"
           onClick={() => {

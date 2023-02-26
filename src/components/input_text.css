@@ -1,0 +1,14 @@
+#text-to-push {
+  resize: none;
+  width: 100px;
+}
+.text-to-push-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#push {
+  border-radius: 6px;
+  border: none;
+  margin-left: 5px;
+}
