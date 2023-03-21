@@ -2,13 +2,14 @@ import "./speech_text.css";
 import speak from "../_helpers/speak";
 import { useState } from "react";
 
-function SpeechText({ text }) {
+function SpeechText({ text, giveInputFocus }) {
   const [showStopButton, setShowStopButton] = useState(true);
   return (
     <>
       <div
         className="speak2"
         onClick={() => {
+          giveInputFocus();
           speak(() => {
             setShowStopButton(true);
           }, text);

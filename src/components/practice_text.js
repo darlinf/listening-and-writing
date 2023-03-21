@@ -30,6 +30,11 @@ function PracticeText({ sentence, sentencesSolved, index }) {
     }
   };
 
+  const giveInputFocus = () => {
+    console.log(inputRef);
+    inputRef.current.focus();
+  };
+
   return (
     <>
       <div>
@@ -48,7 +53,9 @@ function PracticeText({ sentence, sentencesSolved, index }) {
           )}
 
           <div className="speak2">
-            <span>{<SpeechText text={sentence} />}</span>
+            <span>
+              {<SpeechText text={sentence} giveInputFocus={giveInputFocus} />}
+            </span>
           </div>
           <div className="speak">
             <span>{<SpeechTextByWord text={sentence} />}</span>
